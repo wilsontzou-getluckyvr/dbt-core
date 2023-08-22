@@ -72,7 +72,7 @@ RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_
 ##
 FROM base as dbt-redshift
 RUN python -m pip install --no-cache-dir "git+https://github.com/dbt-labs/${dbt_redshift_ref}#egg=dbt-redshift" \
-&& python -m pip install --no-cache-dir pip install dbt-fal[redshift]
+&& python -m pip install --no-cache-dir dbt-fal[redshift]
 
 
 ##
